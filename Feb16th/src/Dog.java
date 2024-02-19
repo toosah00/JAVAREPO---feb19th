@@ -8,7 +8,7 @@ public class Dog {
 	//number of dogs
 	public static int noDog=0;
 	
-	//empty constructor
+	//empty constructor//
 	public Dog() {
 		Dog.noDog++;
 		
