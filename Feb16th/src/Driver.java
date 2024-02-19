@@ -4,38 +4,21 @@ public class Driver {
 		// Dog is the class
 		// Classes are always upper case
 		// dog1 is the object or instance
-		Dog dog1 = new Dog();
-		Dog dog2 = new Dog();
-		Dog dog3 = new Dog("Spike","mutt","black",5);
+		Dog dog1 = new Dog("Archie","mutt","white",1);
 		
-		
-		
-		// reference attributes//
-		dog1.name = "archie";
-		dog1.breed = "bulldog";
-		dog1.color = "brown";
-		dog1.age = 1;
-		
-		// or call methods
+		//set attributes
+		dog1.name = "cheese";
+	
+		//call methods
 		dog1.bark();
 		dog1.eat();
 		
-		// reference attributes
-		dog2.name = "shitass";
-		dog2.breed = "beagle";
-		dog2.color = "white";
-		dog2.age = 50;
-				
-		// or call methods
-		dog2.bark();
-		dog2.eat();
+		dog1.setAge(-5);
+		System.out.printf("age: %d\n", dog1.getAge());
 		
-		// or call methods
-		dog3.bark();
-		dog3.eat();
-		
+		//prints the number of dogs using object.varible
 		System.out.printf("NoDogs: %d\n", dog1.noDog );
-		
+		//uses the method inside dog and prints number of dogs
 		Dog.printNoDog();
 		
 	}

@@ -4,7 +4,7 @@ public class Dog {
 	public String name;
 	public String color;
 	public String breed;
-	public int age;
+	private int age;
 	//number of dogs
 	public static int noDog=0;
 	
@@ -20,9 +20,19 @@ public class Dog {
 		this.name = name;
 		this.breed = breed;
 		this.color = color;
-		this.age = age;
+		this.setAge(age);
 	}
 	
+	public int getAge() {
+		return this.age;
+	}
+	
+	public void setAge(int age) {
+		if(age>=1 && age<=20) {
+			this.age=age;
+			
+		}
+	}
 	
 	//instance method
 	public void bark() {
